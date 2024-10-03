@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>HTML5 Semantic Code Example</title>
+        <!-- css here-->
+        <link href="css/semantics-design.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <div class="container">
+        <!--Main heading of page - only use h1 once per page-->
+        <header>
+            <h1>Proper use of html5 semantic markup</h1>
+        </header>
+
+        <!-- Main navigation links to relative internal links only (once per page) -->
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul>
+                <li><a href="#latin-dummy">Lorem Ipsum</a></li>
+                <li><a href="#hipster-dummy">Hipster Ipsum</a></li>
+                <li><a href="#">Back to Top</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content of the page -->
+        <main>
+            <!-- Grouping content together -->
+            <section id="latin-dummy">
+                <h2>Lorem Ipsum</h2>
+       
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor orci non ligula varius, nec fermentum ligula pharetra. Cras vitae lacus mauris. Suspendisse potenti. Integer volutpat tincidunt mi, sed aliquam lacus facilisis id. Praesent a ex ligula. Vivamus sit amet arcu eget felis aliquet tristique.</p>
+
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sodales vel sapien id efficitur. Etiam malesuada suscipit velit, sed convallis lectus consequat ac. Nulla facilisi. Proin rhoncus tellus nec velit tempor, a posuere dui pellentesque. Nam vehicula urna ac nisl lacinia, in dignissim odio consectetur.</p>
+                    
+                    <p>Curabitur auctor odio sit amet nunc convallis, sed vehicula orci vulputate. In vel lorem et felis congue elementum. Morbi ultricies velit nec orci aliquam, ac vulputate metus cursus. Phasellus dictum pharetra ante, id dignissim ex fermentum id. Nam sit amet neque nec arcu commodo sodales. In ut nunc ac ligula vehicula egestas sit amet non dui.</p>
+                    
+                    <p>Sed dapibus diam sit amet lorem pulvinar, non iaculis arcu dictum. Fusce consectetur varius risus, in auctor risus pretium ut. Mauris aliquam massa in turpis sollicitudin, et accumsan sapien vulputate. Etiam venenatis libero id augue suscipit, id feugiat metus vulputate. Integer id urna nec risus scelerisque posuere.</p>
+                    
+                    <p>Nam malesuada risus non lectus viverra, vel lobortis purus dignissim. Nulla gravida metus nec ex ultrices, quis lacinia ligula viverra. Fusce vehicula sollicitudin nunc. Duis tempor metus non est sollicitudin tincidunt. Etiam sed magna et justo tincidunt ultrices et vitae erat. Aliquam erat volutpat.</p>
+                    
+                    <section id="hipster-dummy">
+                        <h2>Hipster Ipsum</h2>
+                        <p>Biodiesel narwhal street art, PBR&B mixtape man braid normcore tacos gochujang post-ironic. Selfies tilde art party, meditation pug pitchfork jianbing wolf iPhone kogi fingerstache. Tumeric godard brunch, schlitz unicorn etsy raclette keffiyeh letterpress affogato irony chia. Succulents pitchfork 8-bit jianbing, vaporware cold-pressed schlitz food truck shoreditch.</p>
+        
+                        <p>Fixie meditation affogato air plant, four loko tote bag sustainable artisan YOLO. Food truck distillery cold-pressed, hot chicken truffaut brunch DIY selfies gluten-free keytar woke asymmetrical kitsch. Selvage narwhal snackwave, fingerstache yuccie activated charcoal everyday carry 90's 3 wolf moon. Letterpress raclette pour-over, thundercats tumblr kickstarter.</p>
+        
+                        <p>Poutine knausgaard deep v cloud bread cliche woke chicharrones selvage. Whatever marfa synth edison bulb, health goth poke next level chillwave slow-carb cloud bread fashion axe locavore hot chicken disrupt paleo. Hoodie kale chips craft beer, beard meh tofu fam tilde kombucha viral brooklyn heirloom VHS. Marfa you probably haven't heard of them raw denim.</p>
+        
+                        <p>Gentrify tote bag farm-to-table sustainable, ennui trust fund irony master cleanse subway tile scenester pop-up vinyl post-ironic snackwave gochujang knausgaard. IPhone man braid squid brunch, cold-pressed drinking vinegar ramps sriracha intelligentsia hammock. Health goth tbh sriracha, sartorial swag 8-bit jianbing normcore semiotics ethical. Seitan heirloom locavore before they sold out schlitz synth artisan butcher YOLO.</p>
+        
+                        <p>Bicycle rights distillery lo-fi tattooed green juice irony listicle bitters post-ironic affogato. Aesthetic ennui kinfolk, tacos knausgaard next level flexitarian snackwave. Craft beer meditation deep v narwhal leggings flannel schlitz prism skateboard four dollar toast bushwick poutine. Polaroid man braid meh, raclette small batch meggings pickled brooklyn literally.</p>
+        
+                    </section>
+                <!-- informational images -->
+                <figure>
+                    <img src="img/semantics_image.png" class="img-fluid" style="height: 500px; width: 1000px;"alt="My favorite dinner">
+                    <figcaption>Mountains</figcaption>
+                    <!-- supplementary info -->
+                    <aside>
+                        <h2>supplementary latin links</h2>
+                        <ul>
+                            <li><a href="#">How to learn latin</a></li>
+                        </ul>
+                    </aside>
+                </figure>
+            </section>
+            
+        </main>
+
+        <aside>
+            <h2> Supplementary social media links</h2>
+            <ul>
+                <li><a href="#">instagram</a></li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>designed by me</p> 
+            <address>email@colorado.edu</address>
+            <small>&copy; 2021</small>
+        </footer>
+    </div><!-- End container -->
+    </body>
+
+</html>

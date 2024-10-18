@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Accessible Table</title>
+  <link href="css/hw5-tablesforms.css" rel="stylesheet">
+
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip Navigation</a>
+      <h1>Navigation</h1>
+  <!-- nav>ul>li*5>a[#]{Link $} -->
+    <nav>
+        <ul>
+        <li><a href="#table">Things that can lift</a> <span aria-hidden=”true” class="material-icons">forklift</span></li>
+        <li><a href="#myform">Apply to be a lifter</a> <span aria-hidden=”true” class="material-icons">work</span></li>
+        
+        </ul>
+    </nav>
+<main id="main-content">
+
+  <header>
+    <h1>My Website about Lifted Content</h1>
+  </header>
+  <section id="about">
+    <h2>About</h2>
+    <p>This webpage is designed to inform you about all the types of lifters we have in this world. Prepare to be amazed as you enter the world of lifted content!
+    There are so many lifters in this world, from machines to human beings, we can all overcome gravity and lift those heavy objects! 
+    We don't just need to lift physical things, it's important to lift other people too when they are feeling down. <span aria-hidden="true" class="material-icons">sentiment_dissatisfied</span>
+    </p>
+  </section>
+  <section id="table">
+    <h2>Things that can lift</h2>
+
+    <table>
+        <caption>Different types of lifters</caption>
+        <thead>
+        <tr>
+            <th scope="col">Forklift</th>
+            <th scope="col">Crane</th>
+            <th scope="col">Humans</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Counterbalance</td>
+            <td>Telescopic Cranes</td>
+            <td>House Movers</td>
+        </tr>
+        <tr>
+            <td>Pallet Lifter</td>
+            <td>Floating Cranes</td>
+            <td>Shelf Stockers</td>
+        </tr>
+        <tr>
+            <td>Walkie Stacker</td>
+            <td>Tower Cranes</td>
+            <td>Bodybuilders</td>
+        </tr>
+        <tr>
+            <td>Pallet Jack</td>
+            <td>Crawler Cranes</td>
+            <td>Motivational Speakers</td>
+        </tr>
+        </tbody>
+    </table>
+  </section>
+
+
+  <section id="application">
+    <h2>Think you can lift for us?</h2>
+      <form id="myform" method="post">
+      <fieldset>
+        <legend>Give us your information!</legend>
+
+        <label for="username">
+        what is your name?
+        <input type="text" id="username" required>
+        </label>
+
+        <label for="email">
+        what is your email?
+        <input type="email" id="email">
+        </label>
+
+        <label for="website">
+        what is your website?
+        <input type="url" id="website">
+        </label>
+
+        <label for="phone">
+        what is your phone number?
+        <input type="tel" id="phone" minlength="7">
+        </label>
+
+        <label for="age">
+        how old are you?
+        <input type="number" id="age">
+        </label>
+
+        <label for="password">
+        what is your favorite password?
+        <input type="text" id="password" maxlength="20" minlength="5" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+!=]).*" required>
+        </label>
+        <ul class="inputRequirements">
+            <li>must be at least 5 characters and contain uppercase, lowercase, number and symbol</li>
+          </ul>
+
+          <label for="lift">
+            Can you lift heavy things? (Y/N)
+            <input type="text" id="lift" name="lift" maxlength="1" minlength="1" pattern="[YNyn]" required>
+        </label>
+
+
+        
+
+
+      <input type="submit">
+      </fieldset>
+      </form>
+    </section>
+
+
+</main>
+<footer>
+    <p> site by keaton
+    <address>
+      <a href="mailto:kegl7181@colorado.edu"> kegl7181@colorado.edu</a>
+    </address>
+    <small>&copy; 2024</small>
+  </footer>
+</body>
+</html>

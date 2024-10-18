@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Accessible Table</title>
+  <title>Lifted Content</title>
   <link href="css/hw5-tablesforms.css" rel="stylesheet">
 
 </head>
@@ -14,14 +14,17 @@
     <a class="skip-link" href="#main-content">Skip Navigation</a>
     <header>
         <h1>My Website about Lifted Content</h1>
+        <time datetime="2024-10-18">October 18, 2024</time>
     </header>
     <nav>
         <h2 class="sr-only">Main Navigation</h2>
 
         <ul>
-        <li><a href="#table">Things that can lift</a> <span aria-hidden=”true” class="material-icons">forklift</span></li>
-        <li><a href="#myform">Apply to be a lifter</a> <span aria-hidden=”true” class="material-icons">work</span></li>
-        
+            <li><a href="#table">Things that can lift</a> <span aria-hidden=”true” class="material-icons">forklift</span></li>
+            <li><a href="#myform">Apply to be a lifter</a> <span aria-hidden=”true” class="material-icons">work</span></li>
+            <li><a href="#faq">Frequently Asked Questions</a> <span aria-hidden=”true” class="material-icons">question_mark</span></li>
+            <li><a href="#quotes">Inspirational Quotes</a> <span aria-hidden=”true” class="material-icons">sentiment_satisfied</span></li>
+                
         </ul>
     </nav>
 <main id="main-content">
@@ -31,7 +34,7 @@
     <h2>About</h2>
     <p>This webpage is designed to inform you about all the types of lifters we have in this world. Prepare to be amazed as you enter the world of lifted content!
     There are so many lifters in this world, from machines to human beings, we can all overcome gravity and lift those heavy objects! 
-    We don't just need to lift physical things, it's important to lift other people too when they are feeling down. <span aria-hidden="true" class="material-icons">sentiment_dissatisfied</span>
+    We don't just need to lift physical things, <mark>it's important to lift other people too when they are feeling down.</mark> <span aria-hidden="true" class="material-icons">sentiment_dissatisfied</span>
     </p>
   </section>
   <section id="table">
@@ -65,10 +68,29 @@
         <tr>
             <td>Pallet Jack</td>
             <td>Crawler Cranes</td>
-            <td>Motivational Speakers</td>
+            <td><mark>Motivational Speakers</mark></td>
         </tr>
         </tbody>
     </table>
+
+    <figure>
+        <img src="img/hw5img/forklifts.png" class="img-fluid" style="margin: 100px; height: 400px; width: 500px;" alt="This is an image of different types of forklifts, many of these are listed in the table">
+
+        <figcaption class="sr-only">Different types of forklifts</figcaption>
+        <!-- supplementary info -->
+        
+   
+        <img src="img/hw5img/cranes.png" class="img-fluid" style="margin: 100px; height: 700px; width: 500px;" alt="This is an image of different types of cranes, many of these are listed in the table">
+
+        <figcaption class="sr-only">Different types of cranes</figcaption>
+        <!-- supplementary info -->
+    
+        <img src="img/hw5img/movers.png" class="img-fluid" style="margin: 100px; height: 400px; width: 500px;" alt="This is an image of different types of lifting jobs, many of these are listed in the table">
+
+        <figcaption class="sr-only">Different types of movers</figcaption>
+        <!-- supplementary info -->
+        
+    </figure>
   </section>
 
 
@@ -124,7 +146,22 @@
       </fieldset>
       </form>
     </section>
+    <section id="faq">
+        <h2>Additional Information</h2>
+        <details>
+            <summary>FAQ about lifting</summary>
+            <p>Q: How do I lift heavy objects? A: Lift with your legs</p>
+            <p>Q: How do I lift heavy emotions? A: Start with a joke</p>
+        </details>
+    </section>
 
+    <section id="quotes">
+        <h2>Quotations</h2>
+        <blockquote cite="https://www2.hawaii.edu/~freeman/courses/phil360/16.%20Myth%20of%20Sisyphus.pdf">
+            <q>The struggle itself toward the heightsis enough to fill a man's heart. One must imagine Sisyphus happy.</q>
+            <cite> - Albert Camus</cite>
+        </blockquote>
+    </section>
 
 </main>
 <footer>

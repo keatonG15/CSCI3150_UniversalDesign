@@ -22,7 +22,6 @@ figure{
     text-align: center;
 }
 
-/* Flexbox layout for main container */
 .container {
     display: flex;
     flex-direction: column;
@@ -35,49 +34,44 @@ li{
     line-height: 2;
 }
 nav h2 {
-    margin-bottom: 0.5rem; /* Adjust as needed to reduce space */
+    margin-bottom: 0.5rem;
 }
 
-/* Remove default padding and margin from the unordered list */
 .projects ul {
     padding-left: 50px;
     margin: 0;
 }
 
-/* Styling for list items in projects */
 .projects li {
-    margin-bottom: 0.5rem; /* Adjust spacing between each project item */
+    margin-bottom: 0.5rem; 
 }
 .projects a {
-    color: #b30000; /* Accessible color with good contrast */
+    color: #b30000;
     text-decoration: underline;
     font-weight: 500;
-    padding: 0.2rem 0.4rem; /* Adds padding around the link */
-    border-radius: 4px; /* Rounds corners for a modern look */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    padding: 0.2rem 0.4rem; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 /* Hover and focus effects */
 .projects a:hover,
 .projects a:focus {
-    background-color: #ffdcdc; /* Light background for contrast */
-    color: #800000; /* Darker color for readability */
-    text-decoration: none; /* Optionally remove underline for a cleaner look */
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 0 3px #800000; /* Custom focus outline */
+    background-color: #ffdcdc; 
+    color: #800000; 
+    text-decoration: none; 
+    outline: none; 
+    box-shadow: 0 0 0 3px #800000; 
 }
 
-/* Optional: Visited link color */
 .projects a:visited {
-    color: #800080; /* Purple, showing the link has been visited */
+    color: #800080; 
 }
 
-/* Further customization for active (clicked) links */
 .projects a:active {
     background-color: #ffdcdc;
     color: #660000;
 }
-/* Skip navigation link for accessibility */
 .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -92,14 +86,12 @@ nav h2 {
   }
 
 
-/* Header styling */
 h1 {
     text-align: center;
 }
 
 
 
-/* Responsive design for larger screens */
 .about-content {
     display: flex;
     flex-direction: column;
@@ -107,7 +99,6 @@ h1 {
     gap: 1rem;
 }
 
-/* Responsive layout for larger screens */
 @media (min-width: 600px) {
     .about-content {
         flex-direction: row;
@@ -115,7 +106,7 @@ h1 {
     }
 
     .about-content img {
-        width: 50%; /* Adjust size to fit next to the text */
+        width: 50%;
         height: auto;
         margin: 0;
         border-radius: 5%;

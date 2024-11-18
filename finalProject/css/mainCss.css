@@ -11,8 +11,8 @@ body{
         padding: 10px;
         margin: 0 auto;
         max-width: 1200px;
-      
 }
+
 
 p{
     color: #7B1507;
@@ -63,7 +63,15 @@ a, a:visited, a:hover, a:active {
 figure{
     text-align: center;
 }
-
+main {
+    flex: 1;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FEF5D6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -76,11 +84,16 @@ figure{
     margin: 20px auto;
     width: 100%;
     max-width: 1200px;
+    box-shadow: 10px 10pxs;
   }
 
 h1,h2,h3,h4{
     font-family: 'Roboto'
     
+}
+
+h1{
+    text-align: center;
 }
 
 .sr-only {

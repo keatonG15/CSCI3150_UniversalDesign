@@ -99,7 +99,13 @@ h1 {
     gap: 1rem;
 }
 
+/* add another media for tablet (620px) and desktop (1100px) */
+/* tablet */
+/* use viewwidth instead of media queries for resizing images */
+
 @media (min-width: 600px) {
+    .container{}
+    
     .about-content {
         flex-direction: row;
         align-items: flex-start;

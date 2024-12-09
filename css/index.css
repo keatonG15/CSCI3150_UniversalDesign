@@ -7,6 +7,11 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Include padding and border in height/width calculations */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; /* Ensure consistent box-sizing */
 }
 
 header {
@@ -28,6 +33,7 @@ header {
     margin: 0 auto;
     gap: 1em;
     padding: 1em;
+    align-items: stretch; /* Ensure both columns stretch to the same height */
 }
 
 /* Navbar Styling */
@@ -72,26 +78,36 @@ nav ul li a:hover {
     padding: 1em;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column; /* Ensures content flows vertically */
+    justify-content: center; /* Align content vertically in the section */
+    height: 100%; /* Ensure the section expands fully within the row */
 }
 
 .about-me h2 {
     color: #2A4374; /* Match the nav blue for consistency */
 }
 
+/* Aside Styling */
 #aside1 {
     grid-area: aside1;
-    text-align: center;
-    padding: 1em;
-    background-color: #EAF3FF; /* Soft blue */
+    background-color: #EAF3FF; /* Soft blue for consistency */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures no overflow if the image is larger */
+    height: 100%; /* Matches the height of the main content */
+    display: flex; /* Flex container to center image */
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+    padding: 0; /* Ensure no extra space in aside */
 }
 
+/* Image Styling */
 #aside1 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add depth */
+    max-width: 100%; /* Ensures the image scales with the container width */
+    height: 100%; /* Ensures the image scales with the container height */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    border-radius: inherit; /* Matches the container's border radius */
 }
 
 /* Accessibility - Screen Reader Only */
@@ -128,5 +144,9 @@ nav ul li a:hover {
             "about-me"
             "aside1";
     }
-}
 
+    #aside1 img {
+        height: auto; /* Allow natural height for smaller screens */
+        width: 100%;
+    }
+}

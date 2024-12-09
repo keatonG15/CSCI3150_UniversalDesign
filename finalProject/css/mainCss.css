@@ -12,7 +12,13 @@
   white-space: nowrap;
   width: 1px;
 }
-
+/* .skip-link {
+  color: black;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+  } */
 body {
   background-color: #eafbec; /* Light Blue */
   color: #16077b;
@@ -50,13 +56,7 @@ p {
 header, footer {
   text-align: center;
 }
-.skip-link {
-color: black;
-  font-weight: 700;
-  padding: 4px;
-  position: absolute;
-  transform: translateY(-200%);
-}
+
 
 .skip-link:focus {
   transform: translateY(-100%);

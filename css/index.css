@@ -10,9 +10,7 @@ body {
     box-sizing: border-box;
 }
 
-h2{
-    color: #FFFFFF;
-}
+
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -45,6 +43,10 @@ nav {
     padding: 0.5em;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h2{
+    color: #FFFFFF;
 }
 
 nav ul {

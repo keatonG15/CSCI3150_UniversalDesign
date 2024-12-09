@@ -65,7 +65,6 @@ h3 {
 p {
   color: #16077b;
   line-height: 1.5;
-  margin-bottom: 1.8em;
   font-family: 'sans-serif';
 }
 
@@ -174,10 +173,12 @@ footer {
   border-top: 2px solid #ccc;
 }
 
+
+
 /* Media Queries */
 @media screen and (min-width: 1000px) {
   .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas:
       "heady heady"
       "navvy navvy"

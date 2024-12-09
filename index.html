@@ -7,19 +7,16 @@
     <title>CSCI3150</title>
 </head>
 <body>
-    <!-- Skip Navigation Link -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="sr-only">Skip to main content</a>
 
     <header>
         <h1>Keaton Glassman's CSCI 3150 Universal Design Page</h1>
     </header>
 
-    <!-- Main Content to skip to -->
-    <main class="container" id="main-content">
-        
-        <nav class="projects">
-            <h2 class = "sr-only">Main Navigation</h2>
-            
+    <!-- Wrap the nav in a container -->
+    <div class="content-wrapper">
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
             <ul>
                 <li><a href="hw4-wiki.html" target="_blank">HW4</a></li>
                 <li><a href="hw5-tablesforms.html" target="_blank">HW5</a></li>
@@ -27,19 +24,22 @@
                 <li><a href="finalProject/index.html" target="_blank">Final Project</a></li>
             </ul>
         </nav>
-        
-        <section class="about-me" id="about-me">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>My name is Keaton Glassman, I am a senior at CU studying Computer Science. 
-                I love to ski, play video games, and enjoy spending time outdoors. 
-                With a keen interest in Universal Design, I am passionate about creating accessible web applications that everyone can enjoy. 
-                When I'm not coding, I spend time refining my skiing skills or exploring new hiking trails in the Rockies.
-                I'm currently into playing Black Ops 6 on my new gaming PC, but I am pretty trash at mouse and keyboard.</p>
-                <img src="img/IMG_0986.JPG" alt="Picture of Keaton Glassman">
-            </div>
-        </section>
-        
-    </main>
+
+        <main class="container" id="main-content">
+            <section class="about-me" id="about-me">
+                <h2>About Me</h2>
+                <p>
+                    My name is Keaton Glassman, I am a senior at CU studying Computer Science. 
+                    I love to ski, play video games, and enjoy spending time outdoors. 
+                    With a keen interest in Universal Design, I am passionate about creating accessible web applications that everyone can enjoy. 
+                    When I'm not coding, I spend time refining my skiing skills or exploring new hiking trails in the Rockies.
+                    I'm currently into playing Black Ops 6 on my new gaming PC, but I am pretty trash at mouse and keyboard.
+                </p>
+            </section>
+            <aside id="aside1">
+                <img src="img/IMG_0986.JPG" alt="Picture of Keaton Glassman. I am white, with brown long hair. Sitting down in a field wearing a pink collared shirt and blue jeans">
+            </aside>
+        </main>
+    </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     background-color: #FFFFFF; /* White background */
-    color: #00274D; /* Very dark gray for high contrast */
+    color: #1A1A1A; /* Very dark gray for high contrast */
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.6;
@@ -10,18 +10,14 @@ body {
     box-sizing: border-box;
 }
 
-p{line-height: 1.5;
-    /* ================== */
-    margin-bottom: 1.8em;}
-
 *, *::before, *::after {
     box-sizing: inherit;
 }
 
 header {
     text-align: center;
+    color:#00274D;
     padding: 1em;
-    
 }
 
 /* Content Wrapper */
@@ -76,8 +72,10 @@ nav ul li a:hover {
 
 .about-me {
     grid-area: about-me;
+    background-color: #F9F9F9; /* Very light gray for contrast */
     padding: 1em;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +89,7 @@ nav ul li a:hover {
 /* Aside Section */
 #aside1 {
     grid-area: aside1;
-    background-color: #E6F0FF; /* Light blue */
+    background-color: #00274D; /* Light blue */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -107,6 +105,7 @@ nav ul li a:hover {
     height: 100%;
     object-fit: cover;
     border-radius: inherit;
+
 }
 
 /* Accessibility */

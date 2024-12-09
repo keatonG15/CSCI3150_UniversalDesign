@@ -91,7 +91,7 @@ main { grid-area: mainy; }
 footer { grid-area: footy; }
 
 img {
-  width: 50%; /* Sets the image width to 80% of its container */
+  width: 70%; /* Sets the image width to 80% of its container */
   height: auto; /* Maintains the aspect ratio */
   max-height: 50vw; /* Limits height based on viewport width */
   display: block; /* Ensures proper layout in block containers */

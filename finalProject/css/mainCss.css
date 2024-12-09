@@ -105,49 +105,54 @@ img {
   grid-template-columns: 1fr;
   grid-template-areas:
     "heady"
+    "navvy"
     "mainy"
     "aside1"
-    "aside2"
-    "navvy"
     "footy";
 }
 /* Navigation */
 nav {
   background-color: #fdf1d4; /* Light Cream */
   color: #16077b;
-
   padding: 0.2em;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center; /* Centers the content */
   margin-bottom: 2px;
   position: static; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 10px;
-
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 nav ul {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  width: 100%;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: space-around; /* Ensures spacing between items */
+  width: 100%; /* Adjusts to the container width */
   padding: 0;
+  margin: 0; /* Remove default margins */
   list-style: none;
+}
+
+nav ul li {
+  margin: 0.5em 0; /* Adds spacing between items in case of wrapping */
 }
 
 nav ul li a {
   color: #16077b;
   text-decoration: none;
-  padding: 0.7em 1.5em;
-  font-size: 1.4em;
+  padding: 0.7em 1em;
+  font-size: 1em; /* Adjust font size for smaller screens */
   display: block;
   border-radius: 5px;
+  text-align: center; /* Align text inside buttons */
 }
 
 nav ul li a:hover {
   background-color: #ffd59e; /* Soft Orange */
   color: #16077b;
 }
+
 
 /* Main Content */
 main {

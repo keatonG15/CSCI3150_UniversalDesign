@@ -20,23 +20,17 @@
   height: auto;
   padding: 0.5em 1em;
   margin: 1em 0;
-  background-color: #ffd59e; /* Light background for visibility */
-  color: #16077b; /* Text color for contrast */
+  background-color: #ffd59e; 
+  color: #16077b; 
   font-weight: bold;
-  z-index: 1000; /* Ensure it appears above other elements */
+  z-index: 1000; 
   clip: auto;
   white-space: normal;
   text-align: center;
 }
-/* .skip-link {
-  color: black;
-    font-weight: 700;
-    padding: 4px;
-    position: absolute;
-    transform: translateY(-200%);
-  } */
+
 body {
-  background-color: #F7FAFC; /* Light Blue */
+  background-color: #F7FAFC; 
   color: #1A202C;
   font-family: 'Roboto', 'sans-serif';
   font-size: 20px;
@@ -80,7 +74,6 @@ header, footer {
 }
 
 .skip-link {
-  /* Same as  before */
   transition: transform 0.3s;
 }
 
@@ -93,11 +86,11 @@ main { grid-area: main; }
 footer { grid-area: foot; }
 
 img {
-  max-width: 100%; /* Ensures the image never exceeds its container width */
-  height: auto; /* Maintains the aspect ratio */
-  display: block; /* Prevents inline spacing issues */
-  margin: 0 auto; /* Centers the image */
-  object-fit: contain; /* Keeps the entire image visible within the container */
+  max-width: 100%;
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+  object-fit: contain; 
 }
 
 
@@ -111,68 +104,65 @@ img {
     "aside1"
     "foot";
 }
-/* Navigation */
+
 nav {
-  background-color: #2C5282; /* Light Cream */
+  background-color: #2C5282; 
   color: #FFFFFF;
   padding: 0.2em;
   display: flex;
-  justify-content: center; /* Centers the content */
+  justify-content: center; 
   margin-bottom: 2px;
   position: static; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   border-radius: 10px;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  flex-wrap: wrap; 
 }
 
 nav ul {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to the next line */
-  justify-content: space-around; /* Ensures spacing between items */
-  width: 100%; /* Adjusts to the container width */
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  width: 100%; 
   padding: 0;
-  margin: 0; /* Remove default margins */
+  margin: 0; 
   list-style: none;
 }
 
 nav ul li {
-  margin: 0.5em 0; /* Adds spacing between items in case of wrapping */
+  margin: 0.5em 0; 
 }
 
 nav ul li a {
   color: #FFFFFF;
   text-decoration: none;
   padding: 0.7em 1em;
-  font-size: 1em; /* Adjust font size for smaller screens */
+  font-size: 1em; 
   display: block;
   border-radius: 5px;
-  text-align: center; /* Align text inside buttons */
+  text-align: center; 
 }
 
 nav ul li a:hover {
-  background-color: #b5d6ff; /* Soft Orange */
+  background-color: #b5d6ff;
   color: #1A202C;
 }
 
 
-/* Main Content */
 main {
-  background-color: #EDF2F7; /* White for contrast */
+  background-color: #EDF2F7; 
   padding: 1em;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-/* Aside */
 #aside1 {
-  background-color: #b5d6ff; /* Soft Aqua */
+  background-color: #b5d6ff; 
   padding: 1em;
   border-radius: 10px;
   margin: 2%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Match main styling */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-/* Footer */
 footer {
   color: #000; 
   padding: 0.5em;
@@ -206,12 +196,12 @@ footer {
     background: none;
   }
   img {
-    width: 50%; /* Sets the image width to 80% of its container */
-    height: auto; /* Maintains the aspect ratio */
-    max-height: 50vw; /* Limits height based on viewport width */
-    display: block; /* Ensures proper layout in block containers */
-    margin: 0 auto; /* Centers the image */
-    object-fit: cover; /* Scales and crops the image nicely if necessary */
+    width: 50%; 
+    height: auto; 
+    max-height: 50vw; 
+    display: block; 
+    margin: 0 auto; 
+    object-fit: cover;
   }
 }
 
@@ -230,11 +220,11 @@ footer {
       "foot foot";
   }
   img {
-    width: 50%; /* Sets the image width to 80% of its container */
-    height: auto; /* Maintains the aspect ratio */
-    max-height: 100vw; /* Limits height based on viewport width */
-    display: block; /* Ensures proper layout in block containers */
-    margin: 0 auto; /* Centers the image */
-    object-fit: cover; /* Scales and crops the image nicely if necessary */
+    width: 50%; 
+    height: auto; 
+    max-height: 100vw; 
+    display: block; 
+    margin: 0 auto; 
+    object-fit: cover; 
   }
 }

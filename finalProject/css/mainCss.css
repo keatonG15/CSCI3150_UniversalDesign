@@ -50,7 +50,22 @@ p {
 header, footer {
   text-align: center;
 }
+.skip-link {
+color: black;
+  font-weight: 700;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-200%);
+}
 
+.skip-link:focus {
+  transform: translateY(-100%);
+}
+
+.skip-link {
+  /* Same as  before */
+  transition: transform 0.3s;
+}
 
 
 header { grid-area: heady; }

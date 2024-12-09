@@ -36,8 +36,8 @@
     transform: translateY(-200%);
   } */
 body {
-  background-color: #eafbec; /* Light Blue */
-  color: #16077b;
+  background-color: #F7FAFC; /* Light Blue */
+  color: #1A202C;
   font-family: 'Roboto', 'sans-serif';
   font-size: 20px;
   line-height: 1.8;
@@ -63,13 +63,15 @@ h3 {
 }
 
 p {
-  color: #16077b;
+  color: #2D3748;
   line-height: 1.5;
   font-family: 'sans-serif';
 }
 
 header, footer {
   text-align: center;
+  
+  color: #1A202C;
 }
 
 
@@ -83,12 +85,12 @@ header, footer {
 }
 
 
-header { grid-area: heady; }
-nav { grid-area: navvy; }
-main { grid-area: mainy; }
+header { grid-area: head; }
+nav { grid-area: nav; }
+main { grid-area: main; }
 #aside1 { grid-area: aside1; }
 #aside2 { grid-area: aside2; }
-footer { grid-area: footy; }
+footer { grid-area: foot; }
 
 img {
   max-width: 100%; /* Ensures the image never exceeds its container width */
@@ -103,16 +105,16 @@ img {
 .container {
   grid-template-columns: 1fr;
   grid-template-areas:
-    "heady"
-    "navvy"
-    "mainy"
+    "head"
+    "nav"
+    "main"
     "aside1"
-    "footy";
+    "foot";
 }
 /* Navigation */
 nav {
-  background-color: #fdf1d4; /* Light Cream */
-  color: #16077b;
+  background-color: #2C5282; /* Light Cream */
+  color: #FFFFFF;
   padding: 0.2em;
   display: flex;
   justify-content: center; /* Centers the content */
@@ -138,7 +140,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #16077b;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 0.7em 1em;
   font-size: 1em; /* Adjust font size for smaller screens */
@@ -148,14 +150,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #ffd59e; /* Soft Orange */
-  color: #16077b;
+  background-color: #b5d6ff; /* Soft Orange */
+  color: #1A202C;
 }
 
 
 /* Main Content */
 main {
-  background-color: #fcecff; /* White for contrast */
+  background-color: #EDF2F7; /* White for contrast */
   padding: 1em;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -163,15 +165,16 @@ main {
 
 /* Aside */
 #aside1 {
-  background-color: #d4f1f9; /* Soft Aqua */
+  background-color: #b5d6ff; /* Soft Aqua */
   padding: 1em;
   border-radius: 10px;
+  margin: 2%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Match main styling */
 }
 
 /* Footer */
 footer {
-  background-color: #f4f4f4; /* Light Gray */
+  color: #000; 
   padding: 0.5em;
   text-align: center;
   border-top: 2px solid #ccc;
@@ -184,10 +187,10 @@ footer {
   .container {
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
-      "heady heady"
-      "navvy navvy"
-      "mainy aside1"
-      "footy footy";
+      "head head"
+      "nav nav"
+      "main aside1"
+      "foot foot";
   }
 
   nav ul {
@@ -221,10 +224,10 @@ footer {
     height: 100vh;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
-      "heady heady"
-      "navvy navvy"
-      "mainy aside1"
-      "footy footy";
+      "head head"
+      "nav nav"
+      "main aside1"
+      "foot foot";
   }
   img {
     width: 50%; /* Sets the image width to 80% of its container */

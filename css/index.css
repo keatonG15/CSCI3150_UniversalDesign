@@ -21,9 +21,8 @@ p{line-height: 1.5;
 header {
     text-align: center;
     padding: 1em;
-    background-color: #00274D; /* Navy blue for high contrast */
-    color: #FFFFFF; /* White text */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #00274D; /* Navy blue for high contrast */
+
 }
 
 /* Content Wrapper */
@@ -43,7 +42,8 @@ header {
 /* Navigation */
 nav {
     grid-area: nav;
-    background-color: #004080; /* Dark blue */
+
+    background-color: #00274D; /* Dark blue */
     padding: 0.5em;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #b80000; /* Medium blue for hover effect */
+    background-color: #0055B8; /* Medium blue for hover effect */
     color: #FFFFFF;
 }
 

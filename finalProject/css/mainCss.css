@@ -106,28 +106,30 @@ img {
 }
 
 nav {
-  grid-area: nav;
-  background-color: #00274D; /* Dark blue */
-  padding: 0.5em;
+  background-color: #2C5282; 
+  color: #FFFFFF;
+  padding: 0.2em;
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 2px;
+  position: static; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Ensure the navbar spans the screen width */
-  max-width: 100%;
-  overflow: hidden; /* Prevent overflow content */
+  flex-wrap: wrap; 
 }
 
 nav ul {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap on small screens */
-  justify-content: center; /* Center the links */
-  list-style: none;
-  margin: 0;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  width: 100%; 
   padding: 0;
-  width: 100%; /* Make sure the ul fits within the nav */
+  margin: 0; 
+  list-style: none;
 }
 
 nav ul li {
-  margin: 0.2em 0.5em; /* Add small margins for spacing */
+  margin: 0.5em 0; 
 }
 
 nav ul li a {

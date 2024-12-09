@@ -1,7 +1,7 @@
 /* General Styles */
 body {
-    background-color: #F9F9F9; /* Light neutral background */
-    color: #3B3B3B; /* Dark gray for readability */
+    background-color: #F4F4F9; /* Slightly darker light neutral background */
+    color: #2C2C2C; /* Darker gray for improved readability */
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.6;
@@ -17,7 +17,7 @@ body {
 header {
     text-align: center;
     padding: 1em;
-    background-color: #4267B2; /* Deep blue */
+    background-color: #34568B; /* Darker blue for better contrast */
     color: #FFFFFF; /* White text for contrast */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
@@ -39,7 +39,7 @@ header {
 /* Navbar Styling */
 nav {
     grid-area: nav; /* Spans the width of the content */
-    background-color: #2A4374; /* Muted navy blue */
+    background-color: #2A4374; /* Darker muted navy blue */
     padding: 0.5em;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
@@ -55,7 +55,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #FFFFFF; /* White for high contrast */
+    color: #F8F8FF; /* Very light gray for contrast on navy background */
     font-weight: 600;
     padding: 0.5em 1em;
     border-radius: 5px;
@@ -63,7 +63,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #5A86C5; /* Softer blue for hover effect */
+    background-color: #4267B2; /* Medium blue for hover effect */
     color: #FFFFFF;
 }
 
@@ -85,13 +85,13 @@ nav ul li a:hover {
 }
 
 .about-me h2 {
-    color: #2A4374; /* Match the nav blue for consistency */
+    color: #2A4374; /* Darker navy blue for consistency and contrast */
 }
 
 /* Aside Styling */
 #aside1 {
     grid-area: aside1;
-    background-color: #EAF3FF; /* Soft blue for consistency */
+    background-color: #D9E8F6; /* Lighter blue with higher contrast */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Ensures no overflow if the image is larger */
@@ -126,7 +126,7 @@ nav ul li a:hover {
     width: auto;
     height: auto;
     padding: 0.5em 1em;
-    background-color: #5A86C5; /* Softer blue for focus */
+    background-color: #34568B; /* Darker blue for focus */
     color: #FFFFFF; /* White text */
     font-weight: bold;
     z-index: 1000;

@@ -10,6 +10,10 @@ body {
     box-sizing: border-box;
 }
 
+h2{
+    color: #FFFFFF;
+}
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -89,7 +93,7 @@ nav ul li a:hover {
 /* Aside Section */
 #aside1 {
     grid-area: aside1;
-    background-color: #00274D; /* Light blue */
+    background-color: #FFFFFF; /* Light blue */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;

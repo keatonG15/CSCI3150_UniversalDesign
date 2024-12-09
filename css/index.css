@@ -10,7 +10,9 @@ body {
     box-sizing: border-box;
 }
 
-
+p{
+    color:#00274D
+}
 
 *, *::before, *::after {
     box-sizing: inherit;

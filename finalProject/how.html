@@ -3,48 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>How to Achieve Universal Design</title>
-  <link rel="stylesheet" href="css/mainCss.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/mainCss.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
   <header>
-    <a class="skip-link" href="#main-content">Skip Navigation</a>
+    <a class="sr-only" href="#main-content">Skip Navigation</a>
     <h1> Universal Design -- The What, Why, and How </h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">What is Universal Design</a></li>
-            <li><a href="why.html">Why is Universal Design Important</a></li>
-            <li><a href="how.html">How to Achieve an Accessible Website</a></li>
-          </ul>
-    </nav>
   </header>
+  <nav>
+    <h2 class="sr-only">Main Navigation</h2>
+    <ul>
+      <!-- shorten link names -->
+      <li><a href="index.html">Definition</a></li>
+      <li><a href="why.html">Importance</a></li>
+      <li><a href="how.html">How to Achieve</a></li>
+    </ul>
+  </nav>
 
   <main>
     <h2>How to Achieve Universal Design</h2>
     <section>
       <h3>Norman's Design Principles</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Include Image here</p>
-
+      <p>Norman's design principles provide foundational guidelines for creating accessible and intuitive user experiences. Visibility is crucial, as users need to see key functions and elements immediately. Feedback ensures users understand the results of their actions, creating a seamless interaction. Constraints help guide users by preventing errors, while mapping ensures an intuitive relationship between controls and their effects. Consistency across the design reduces confusion, and affordance makes it clear how an element can be used. Together, these principles form the basis for universal design, ensuring clarity and usability for all users.</p>
+      <p><img src="img/norman.webp" alt="An image of a tea pot surrounded with the Norman Design Principles in text" /></p>
+      <figcaption class="sr-only">Illustration of Norman's Design Principles</figcaption>
     </section>
 
     <section>
       <h3>Planning Accessible Websites</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Include Image here</p>
-
+      <p>The journey to an accessible website begins with careful planning and understanding your audience. Using personas can help represent the needs of diverse users, guiding the design process. Creating detailed sitemaps ensures that content is logically organized, while wireframes provide a clear visual structure before development begins. Incorporating accessibility elements, such as high-contrast color schemes, descriptive alt text for images, and properly implemented 'sr-only' classes, ensures the website is usable by people with a variety of needs. These steps are essential to crafting a digital experience that is inclusive and functional for everyone.</p>
     </section>
 
     <section>
       <h3>Accessibility Tools</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Include Image here</p>
-
+      <p>A range of tools is available to support the creation of accessible digital experiences. Tools like WAVE Evaluator help identify accessibility issues within webpages, while Nu Validator ensures that HTML code complies with modern standards. The HTML Outliner can analyze a webpage's structure, ensuring it is easy to navigate with screen readers. Using these tools allows developers to refine their designs to accommodate diverse needs, improving accessibility in tables, forms, tabbed navigation, and responsive layouts. These tools also help developers test compatibility across devices, ensuring websites are functional on everything from desktop monitors to mobile screens.</p>
     </section>
   </main>
 
+  <aside id="aside1">
+    <h2>Norman's Design Principles</h2>
+    <ol>
+      <li><strong>Visibility:</strong> Ensure that all essential functions and elements are visible and easy to identify.</li>
+        <li><strong>Feedback:</strong> Provide immediate and clear feedback for user actions.</li>
+        <li><strong>Constraints:</strong> Use design elements to prevent errors and guide users.</li>
+        <li><strong>Mapping:</strong> Design intuitive relationships between controls and their effects.</li>
+        <li><strong>Consistency:</strong> Maintain uniformity in design elements and user experiences.</li>
+        <li><strong>Affordance:</strong> Use elements that suggest their functionality (e.g., buttons that look clickable).</li>
+    </ol>
+
+    <h2>Example Accessibility Tools</h2>
+    <ol>
+      <li>WAVE Evaluator</li>
+      <li>Nu Validator</li>
+      <li>Adobe Color Wheel</li>
+      <li>HTML Outliner</li>
+    </ol>
+  </aside>
+
   <footer>
-    <p>&copy; 2024 Universal Design Project</p>
+    <small>Designed by me for EVERYBODY</small>
   </footer>
+</div> <!-- end container -->
 </body>
 </html>
+
+ 

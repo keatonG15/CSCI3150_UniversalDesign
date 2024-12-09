@@ -3,44 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Why Universal Design Matters</title>
-  <link rel="stylesheet" href="css/mainCss.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/mainCss.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
   <header>
-    <a class="skip-link" href="#main-content">Skip Navigation</a>
+    <a class="sr-only" href="#main-content">Skip Navigation</a>
     <h1> Universal Design -- The What, Why, and How </h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">What is Universal Design</a></li>
-            <li><a href="why.html">Why is Universal Design Important</a></li>
-            <li><a href="how.html">How to Achieve an Accessible Website</a></li>
-          </ul>
-    </nav>
   </header>
+  <nav>
+    <h2 class="sr-only">Main Navigation</h2>
+    <ul>
+      <!-- shorten link names -->
+      <li><a href="index.html">Definition</a></li>
+      <li><a href="why.html">Importance</a></li>
+      <li><a href="how.html">How to Achieve</a></li>
+    </ul>
+  </nav>
 
   <main>
     <h2>Why is Universal Design Important?</h2>
     <section>
       <h3>Business Benefits</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Businesses that fail to prioritize accessibility in their websites and digital tools risk losing access to a vast market of potential customers with disabilities. Studies have shown that inaccessible websites alienate users who cannot navigate or comprehend the content, directly impacting sales and engagement. By implementing universal design principles, businesses can broaden their customer base, enhance their brand reputation, and create an inclusive user experience that fosters loyalty.</p>
     </section>
 
     <section>
       <h3>Human Rights</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Access to the internet is increasingly recognized as a fundamental human right. An inaccessible website denies individuals with disabilities the ability to participate fully in digital society, limiting their access to education, employment opportunities, and social engagement. Universal design not only ensures compliance with legal standards but also upholds the principle that everyone deserves equal access to online resources, regardless of their abilities.</p>
     </section>
 
     <section>
       <h3>Practical Applications</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Include Image here</p>
-
+      <p>Incorporating universal design into tools like Zoom, Slack, and Teams ensures that individuals using screen reading software (SRS) or other assistive technologies can effectively navigate and utilize these platforms. By providing accessible layouts and functionality, universal design enhances productivity and inclusion in workplaces and educational environments. Features like keyboard navigation, voice commands, and descriptive alt text can make digital tools usable for everyone.</p>
+      <p><img src="img/businessTools.png" alt="Images of different business tools icon, including zoom, google drive, and dropbox" /></p>
+      <figcaption class="sr-only">Illustration of accessible business tools in use</figcaption>
     </section>
   </main>
 
+  <aside id="aside1">
+    <h2>Examples of Business Tools</h2>
+    <ol>
+      <li>Zoom</li>
+      <li>Microsoft Teams</li>
+      <li>Slack</li>
+      <li>Outlook</li>
+      <li>Gmail</li>
+      <li>Google Drive</li>
+      <li>Dropbox</li>
+    </ol>
+  </aside>
+  
   <footer>
-    <p>&copy; 2024 Universal Design Project</p>
+    <small>Designed by me for EVERYBODY</small>
   </footer>
+
+</div> <!-- end container -->
 </body>
 </html>

@@ -3,59 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>What is Universal Design?</title>
-  <link rel="stylesheet" href="css/mainCss.css">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/mainCss.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
   <header>
-    <a class="skip-link" href="#main-content">Skip Navigation</a>
+    <a class="sr-only" href="#main-content">Skip Navigation</a>
     <h1> Universal Design -- The What, Why, and How </h1>
-    <nav>
-      <h2 class="sr-only">Main Navigation</h2>
-      <ul>
-        <!-- shorten link names -->
-        <li><a href="index.html">Definition</a></li>
-        <li><a href="why.html">Importance</a></li>
-        <li><a href="how.html">How to Achieve</a></li>
-      </ul>
-    </nav>
   </header>
-<!-- use aside for supplementary information -- 7 principles perhaps? -->
-<!-- aside should be outside of main -->
-<!-- mobile first -->
+  <nav>
+    <h2 class="sr-only">Main Navigation</h2>
+    <ul>
+      <!-- shorten link names -->
+      <li><a href="index.html">Definition</a></li>
+      <li><a href="why.html">Importance</a></li>
+      <li><a href="how.html">How to Achieve</a></li>
+    </ul>
+  </nav>
+
   <main>
     <h2 id="main-content">What is Universal Design?</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    </p>
+    <p>Universal design is a methodology for creating websites and interactive technologies that are usable by everyone, regardless of their abilities or disabilities. This design philosophy emphasizes accessibility, ensuring that individuals with visual impairments, mobility challenges, or other disabilities can navigate, understand, and interact with web content seamlessly. By considering all users during the design process, universal design enables inclusive digital experiences for all.</p>
 
     <section>
       <h3>Understanding Disabilities</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Disabilities can be congenital, acquired, or situational. For instance, visual impairments might require screen reading software, while mobility issues might demand voice navigation. Additionally, situational impairments, such as temporary injuries, can affect how users interact with digital content. Universal design bridges these gaps by ensuring that digital environments are accessible to users with a wide range of abilities.</p>
     </section>
 
     <section>
         <h3>Screen Reading Software (SRS)</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Include Image here</p>
+        <p>Screen Reading Software (SRS) is a critical tool for visually impaired users. It translates digital text into audio or Braille, allowing users to navigate websites without relying on sight. Implementing features like the 'sr-only' class ensures that vital information is accessible to screen readers without disrupting the visual layout of a webpage. This approach not only enhances usability but also complies with accessibility standards like WCAG.</p>
+        <p><img src="img/srs.avif" alt="Cartoon image of screen reading software. Shows a website being translated into audio or braille." /></p>
+        <figcaption class = "sr-only">Example of Screen Reading Software in use</figcaption>
     </section>
 
     <section>
       <h3>The History of Universal Design</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Universal design began as a grassroots movement advocating for accessibility in physical spaces but has since evolved to encompass digital technologies. The introduction of CSS (Cascading Style Sheets) played a pivotal role in universal design, enabling developers to separate content from design. This separation simplifies the process of creating accessible layouts, ensuring that web content remains functional and visually appealing across devices and assistive technologies.</p>
     </section>
 
     <section>
       <h3>The Future of Universal Design</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>As technology advances, universal design is poised to leverage artificial intelligence and machine learning to enhance accessibility. Future trends include voice-activated navigation, dynamic content adaptation based on user preferences, and augmented reality interfaces designed for inclusivity. By anticipating the needs of all users, universal design ensures that digital spaces continue to evolve towards greater inclusivity.</p>
     </section>
-
-    
   </main>
 
+  <aside id="aside1">
+    <h2>The Seven Principles of Universal Design</h2>
+    <ol>
+     <li>Equitable Use</li>
+     <li>Flexibility in Use</li>
+     <li>Simple and Intuitive</li>
+     <li>Tolerance for Error</li>
+     <li>Low Physical Effort</li>
+     <li>Size and Space for Approach and Use</li>
+     <li>Perceptible Information</li>
+    </ol>
+  </aside>
+  
   <footer>
-    <p>&copy; 2024 Universal Design Project</p>
+    <small>Designed by me for EVERYBODY</small>
   </footer>
+
+</div> <!-- end container -->
 </body>
 </html>

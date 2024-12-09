@@ -10,6 +10,10 @@ body {
     box-sizing: border-box;
 }
 
+p{line-height: 1.5;
+    /* ================== */
+    margin-bottom: 1.8em;}
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -63,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #0055B8; /* Medium blue for hover effect */
+    background-color: #b80000; /* Medium blue for hover effect */
     color: #FFFFFF;
 }
 

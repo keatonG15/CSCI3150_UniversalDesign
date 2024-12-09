@@ -126,20 +126,24 @@ nav ul {
   padding: 0;
   margin: 0; 
   list-style: none;
+  flex-direction: column; /* Stack the links vertically */
+        align-items: center;
 }
 
 nav ul li {
   margin: 0.5em 0; 
+  width: 100%; /* Ensure each link takes the full width of its container */
+        text-align: center;
 }
 
 nav ul li a {
   color: #FFFFFF;
   text-decoration: none;
-  padding: 0.7em 1em;
-  font-size: 1em; 
-  display: block;
   border-radius: 5px;
   text-align: center; 
+  display: block; /* Ensure links span the width of the list item */
+        padding: 0.8em 0; /* Adjust padding for better spacing */
+        font-size: 1em;
 }
 
 nav ul li a:hover {
@@ -186,24 +190,14 @@ footer {
   nav ul {
     flex-flow: row nowrap;
     justify-content: space-around;
-    flex-direction: column; /* Stack the links vertically */
-        align-items: center;
-  }
-
-  nav ul li{
-    width: 100%; /* Ensure each link takes the full width of its container */
-        text-align: center;
-
   }
 
   nav ul li a {
-    display: block; /* Ensure links span the width of the list item */
-        padding: 0.8em 0; /* Adjust padding for better spacing */
-        font-size: 1em;
+    display: inline;
+    padding: 10px 5px;
     margin: 5px;
     border: none;
     background: none;
-    
   }
   img {
     width: 50%; 

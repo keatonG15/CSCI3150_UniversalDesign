@@ -1,25 +1,25 @@
 /* General Styles */
 body {
-    background-color: #F8F8F8; /* Light gray */
-    color: #2D2D2D; /* Dark gray for high contrast */
+    background-color: #FFFFFF; /* White background */
+    color: #1A1A1A; /* Very dark gray for high contrast */
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure padding and border are included in dimensions */
+    box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    box-sizing: inherit; /* Inherit consistent box-sizing */
+    box-sizing: inherit;
 }
 
 header {
     text-align: center;
     padding: 1em;
-    background-color: #1A3A67; /* Very dark blue */
-    color: #FFFFFF; /* White for high contrast */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #00274D; /* Navy blue for high contrast */
+    color: #FFFFFF; /* White text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Content Wrapper */
@@ -33,13 +33,13 @@ header {
     margin: 0 auto;
     gap: 1em;
     padding: 1em;
-    align-items: stretch; /* Stretch items to match height */
+    align-items: stretch;
 }
 
-/* Navigation Bar */
+/* Navigation */
 nav {
     grid-area: nav;
-    background-color: #2D4F8B; /* Dark navy */
+    background-color: #004080; /* Dark blue */
     padding: 0.5em;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -55,7 +55,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #FFFFFF; /* White for high contrast */
+    color: #FFFFFF; /* White text for contrast */
     font-weight: bold;
     padding: 0.5em 1em;
     border-radius: 5px;
@@ -63,18 +63,18 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #3B6DBF; /* Medium blue for hover effect */
-    color: #FFFFFF; /* Maintain high contrast */
+    background-color: #0055B8; /* Medium blue for hover effect */
+    color: #FFFFFF;
 }
 
 /* Main Content */
 .container {
-    display: contents; /* Directly inherits grid layout from wrapper */
+    display: contents;
 }
 
 .about-me {
     grid-area: about-me;
-    background-color: #FFFFFF; /* White background for contrast */
+    background-color: #F9F9F9; /* Very light gray for contrast */
     padding: 1em;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -85,13 +85,13 @@ nav ul li a:hover {
 }
 
 .about-me h2 {
-    color: #1A3A67; /* Dark blue for contrast */
+    color: #00274D; /* Navy blue for high contrast */
 }
 
 /* Aside Section */
 #aside1 {
     grid-area: aside1;
-    background-color: #DCE6F2; /* Light blue for high contrast */
+    background-color: #E6F0FF; /* Light blue */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -125,7 +125,7 @@ nav ul li a:hover {
     width: auto;
     height: auto;
     padding: 0.5em 1em;
-    background-color: #3B6DBF; /* Medium blue for focus */
+    background-color: #0055B8; /* Medium blue for focus */
     color: #FFFFFF;
     font-weight: bold;
     z-index: 1000;
